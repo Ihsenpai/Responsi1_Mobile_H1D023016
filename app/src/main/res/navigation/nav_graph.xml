@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.responsi1mobileh1d023016.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_coachFragment"
+            app:destination="@id/coachFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_squadFragment"
+            app:destination="@id/squadFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.responsi1mobileh1d023016.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/coachFragment"
+        android:name="com.example.responsi1mobileh1d023016.CoachFragment"
+        android:label="fragment_coach"
+        tools:layout="@layout/fragment_coach" />
+
+    <fragment
+        android:id="@+id/squadFragment"
+        android:name="com.example.responsi1mobileh1d023016.SquadFragment"
+        android:label="fragment_squad"
+        tools:layout="@layout/fragment_squad" >
+        <action
+            android:id="@+id/action_squadFragment_to_playerDetailDialogFragment"
+            app:destination="@id/playerDetailDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/playerDetailDialogFragment"
+        android:name="com.example.responsi1mobileh1d023016.PlayerDetailDialogFragment"
+        android:label="PlayerDetailDialogFragment"
+        tools:layout="@layout/fragment_player_detail_dialog">
+
+        <argument
+            android:name="playerName"
+            app:argType="string" />
+        <argument
+            android:name="playerDob"
+            app:argType="string" />
+        <argument
+            android:name="playerNationality"
+            app:argType="string" />
+        <argument
+            android:name="playerPosition"
+            app:argType="string" />
+    </dialog>
+
+</navigation>
