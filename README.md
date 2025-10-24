@@ -19,6 +19,6 @@ Alur data aplikasi ini dimulai saat sebuah Fragment (misal, `CoachFragment` atau
 2.  **API Call**: `fetchTeamData()` menggunakan *Coroutine* (`viewModelScope.launch`) untuk menjalankan tugas di background. Di dalamnya, ia memanggil `ApiClient.apiService.getTeamDetails(teamId = 70, apiToken = "TOKEN_API_KAMU")`.
 3.  **Retrofit**: `ApiClient` (yang sudah dikonfigurasi dengan Retrofit dan Gson) menerjemahkan panggilan itu menjadi *request* HTTP GET ke `https://api.football-data.org/v4/teams/70` dengan *header* `X-Auth-Token`.
 4.  **Data Response**: API mengembalikan data dalam format JSON.
-5.  **Gson**: Library Gson secara otomatis mengubah (parse) JSON tersebut menjadi objek data Kotlin yang sudah kita buat (`TeamResponse`).
+5.  **Gson**: Library Gson secara otomatis mengubah (parse) JSON tersebut menjadi objek data Kotlin yang sudah saya buat (`TeamResponse`).
 6.  **LiveData**: `ViewModel` menerima objek `TeamResponse` ini dan men-submit nilainya ke `_teamData` (sebuah `MutableLiveData`).
 7.  **UI Update**: Karena Fragment sedang mengamati (observe) `teamData` (versi `LiveData` yang *public*), Fragment akan otomatis ter-notifikasi bahwa ada data baru. Fragment kemudian mengambil data tersebut (misal, `teamResponse.squad`) dan memberikannya ke `PlayerAdapter` untuk ditampilkan di `RecyclerView`.
