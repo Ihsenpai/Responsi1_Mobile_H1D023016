@@ -2,16 +2,14 @@
 
 ## Identitas Praktikan
 
-- **Nama:** [Nama Lengkap Kamu]
+- **Nama:** [Fatihul Ihsan Al Ghoni]
 - **NIM:** H1D023016
-- **Shift Baru:** [Shift Baru Kamu, misal: "Shift 1"]
-- **Shift Asal:** [Shift Asal Kamu, misal: "Shift 2"]
+- **Shift Baru:** ["B"]
+- **Shift Asal:** ["D"]
 
 ## Video Demo
 
-[**Tonton Video Demo Aplikasi (Klik Di Sini)**]([https://youtu.be/link-video-kamu-disini](https://drive.google.com/file/d/1dhplgiGhJT9qJjOWvVUpcxA2tvhCePwz/view?usp=sharing))
-
-*(Pastikan video demo di-upload ke YouTube/Google Drive dan link-nya public/unlisted)*
+[**Tonton Video Demo Aplikasi (Klik Di Sini)**](https://drive.google.com/file/d/1dhplgiGhJT9qJjOWvVUpcxA2tvhCePwz/view?usp=sharing)
 
 ## Penjelasan Alur Data
 
